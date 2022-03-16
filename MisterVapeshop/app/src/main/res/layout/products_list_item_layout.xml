@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardUseCompatPadding="true"
+    app:cardCornerRadius="@dimen/card_view_corner_radius"
+    app:cardElevation="2dp"
+    xmlns:tools="http://schemas.android.com/tools">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/product_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_max"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Product name"
+                style="@style/BoldTitleTextTheme"
+                android:id="@+id/product_title"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="price"
+                style="@style/BoldTitleTextTheme"
+                android:id="@+id/product_price"/>
+
+
+                <TextView
+                    android:id="@+id/product_cat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:saveEnabled="true"
+                    tools:text="Category"/>
+
+            <TextView
+                android:id="@+id/product_qty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:saveEnabled="true"
+                tools:text="Stocks"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    </ScrollView>
+</androidx.cardview.widget.CardView>
